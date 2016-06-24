@@ -1,0 +1,3 @@
+On calibre library screen, right click on a book then select edit book > after editing book, save two times. 
+Ctrl + S: Save to calibre library (I:\Win7 Software\calibre\Calibre Library) . This option does not change original book
+Ctrl + Alt + S: Overwrite original book 
