@@ -1,0 +1,53 @@
+======================================================================================Question======================================================================================
+
+I'm using Microsoft Word 2007. I have several large screenshots that need to be inserted into the document at various places. When I paste the pictures, I have to manually resize them to fit within the margins of the document. This takes up too much of my time. I tried batch resizing the images before inserting them, so they were the right size, but it appears Word uses a higher dpi when printing, so those pictures came out blurry compared to the ones resized within Word.
+
+So what I am looking for is if there is an option that makes Word automatically shrink large images when I paste them so that they are the width of the page (with correct aspect ratio). I'm using "in line with text," though I could use "tight" if necessary.
+
+Again, this isn't a life-or-death thing. I could always manually resize the 30+ images. But it seems like there should be an easier way. Has anyone come across this?
+
+(TL;DR: I'm looking for a way to automatically resize an image larger than page width to page width when pasted in Word.)
+
+EDIT: When I try making an image 96dpi and pasting into Word, it shows up very small (but prints clearly). When I upscale it, it retains this clarity. But it still isn't pasted in as the correct size initially, which is what I'm looking for...
+
+
+
+
+
+
+
+
+
+
+
+
+======================================================================================Method 1======================================================================================
+
+I find that a quicker way to do this is to just use F4 (or Ctrl-Y). Note that on this page it says that F4 will Repeat the last action, but Ctrl-Y will also do the same thing. On the Mac version (Office 2011) F4 does not work, so Cmd-Y is the only option.
+
+So, insert all your images without worrying about their size. Then right click on the first image and select Size and Position. Set the width as desired, then click OK. Then select each of the subsequent images (left click on them) and simply press F4 or Ctrl-Y.
+
+This same trick can also be used to repeatedly apply other changes or effects in the Size and Position or Format Picture dialogs to different pictures.
+
+
+
+======================================================================================Method 2======================================================================================
+
+
+
+From Default Picture Settings :
+
+    If you have a need to format quite a few pictures using the same settings, the easiest approach is to create a quick-and-dirty macro to apply the formatting settings you want. You could then paste the picture, select it, and then run the macro. You can create such a macro by following these general steps:
+
+        Paste the picture in your document.
+        Select the picture you just pasted.
+        Start the macro recorder.
+        Make the size and position changes to the picture, as desired.
+        Stop the macro recorder.
+
+    Your macro is now ready to use. Whenever a new picture is pasted in your document, select it and run the macro to apply the "default" settings.
+
+See also Assigning Shortcuts to Macros in Word 2007 :
+
+    If you really want to get the most out of your commonly used macros in Microsoft Word 2007, you can assign buttons or keyboard shortcuts to them so that the process of running these macros is even more efficient.
+
