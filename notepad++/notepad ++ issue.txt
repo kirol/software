@@ -1,0 +1,14 @@
+As I have tried to tell people before, there is a paste bug in Notepad++, and Notepad++ adds "?" character to pasted text.
+
+Try this and see for yourself. Go to any youtube video, and then highlight and copy the entire text message posted by someone. Then paste it into a notepad++ text file and notice that "?" characters will appear randomly in the text.
+
+But interestingly, some text pasts OK, but some add a random ?
+
+So try a few different comments and copy and paste them.
+
+
+
+
+
+Just make sure Notepad++ it's encoding is not set to ANSI Sticking out tongue
+With ANSI you're bound to get question-marks for any 'special' character.
