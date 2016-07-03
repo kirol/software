@@ -1,0 +1,9 @@
+What Is Hardware Acceleration?
+
+There are several different ways to play back a video. One is through Ågsoftware decodingÅh. A video player reads the video file and decodes the information using your computerÅfs processor, or CPU. Modern CPUs can handle this and provide smooth video just fine, but the CPU isnÅft really optimized for doing this type of math.
+
+Hardware accelerated decoding, however, is much more efficient. With hardware acceleration, the CPU hands off the decoding work to the graphics processor (GPU), which is designed to accelerate the decoding (and encoding) of certain types of videos. In a nutshell, the GPU can do certain types of math faster and with less electricity required. That translates to longer battery life, less heat, and smoother playback on slow computers.
+
+The only catch? Hardware acceleration is only available for certain video codecs. In general, when you rip or download videos, you should use H.264 (which is pretty popular these days, so it shouldnÅft be hard to find). These often have the .mp4 file extension. Hardware acceleration is most widely available for this type of video.
+
+Unfortunately, many modern video players?VLC included?donÅft bother using hardware acceleration by default, even if they support it. So you need to turn it on yourself.
