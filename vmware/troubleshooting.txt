@@ -1,0 +1,18 @@
+============VMware Tools installation fails when Easy Install is in progress ===========
+
+This error occurs when the virtual floppy with the autoinstall information required by Easy Install does not unmount properly.
+ 
+To resolve this issue and unmount the virtual floppy:
+Go to VM > Settings
+Select Floppy.
+Select Use physical drive, and set the dropdown to Auto detect.This unmounts the virtual floppy from the virtual drive.
+Install VMware Tools. 
+
+
+
+
+==================================ACPI:memory_hp:Memory online failed for 0x10000000 - 0xc0000000===========================
+Editing the vmx file and setting:
+ 
+vcpu.hotadd = "FALSE"
+mem.hotadd = "FALSE"

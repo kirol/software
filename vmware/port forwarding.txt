@@ -1,3 +1,3 @@
 Forwarding Ports to a Virtual Machine
 
-If you prefer to use NAT network mode for some reason, you can also forward ports through the virtual machineÅfs NAT. Note that only one of these steps is necessary ? you donÅft have to forward ports if you enabled bridged networking above.
+If you prefer to use NAT network mode for some reason, you can also forward ports through the virtual machineÅ's NAT. Note that only one of these steps is necessary ? you donÅ't have to forward ports if you enabled bridged networking above.
