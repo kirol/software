@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\VMware\VMware Player\vmplayer.exe" -X "E:\mcs virtual 12.04_MCS358\Ubuntu 64-bit.vmx"

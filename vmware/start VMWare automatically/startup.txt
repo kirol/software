@@ -1,0 +1,2 @@
+On Windows 7, open this folder C:\Users\usertest\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+Then copy startVMWare.bat into Startup folder
