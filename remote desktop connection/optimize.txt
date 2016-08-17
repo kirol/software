@@ -1,0 +1,6 @@
+2. In the “Display” tab (you’ll have to select “Options…”), crank the Color Depth down to 15 (aka “thousands”) or 16-bit depending on your preference. The lower the color settings the faster the connection.
+
+3. In the “Local Resources” tab, un-check Printers and set Audio to “Do not play”. If you require the ability to print to your locally attached printer or need to hear audio, ignore my suggestions accordingly. Note that un-checking Printers is also especially useful to reduce the overhead involved with making the destination Terminal Server attempt to install your printers (and sometimes cause the spooler service to crash). The less additional “channels” (resources) that you connect the faster the connection.
+
+4. In the “Experience” tab, select modem to un-check all options except Bitmap caching. All other options consume extra bandwidth, and offer little benefit for most users of Remote Desktop. This is possibly the most important change to make, as items such as “Themes” can quadruple the bandwidth consumption under the right circumstances.
+
