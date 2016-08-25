@@ -1,0 +1,4 @@
+Windows + X
+Choose what the power button does
+Change settings that currently is not available
+Untick Turn on fast startup
