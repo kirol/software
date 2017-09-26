@@ -1,3 +1,19 @@
+==================With UI==================
+I'm a fan of LVM but I don't think it is required in this case - if all you want to do is to expand your sda1 filesystem to use the rest of the space on this drive. Assuming you don't at the moment have any data on your sda3, a better strategy is:
+
+with fdisk it is hard to work out the actual sizes of the partitions, use swapon -s to show the size of your swap partition in K - and write this down
+Reboot the virtual system with SystemRescueCD (or GParted Live) as a virtual CD, booting from the CD - press ESC at the very start of the boot process to select the boot device
+if using SystemRescueCD then type startx at the end of the boot process to load the GUI and find GParted under the menu at System (GParted Live however will boot straight into GUI)
+use GParted to remove logical partitions sda5 and sda3, and then the extended partition sda2
+expand sda1 to fill most of the disk, leaving enough space at the end for your new swap partition which should be at least as big as your previous swap partition
+after expanding sda1, create a new 'extended partition' in the rest of the drive, and after this is created, reselect it, and inside it create a new logical partition, and mark this partition as type 'linux-swap'
+after you've selected these operations you then have to apply them (green check button), which is when they actually happen - this may take some time (but probably not)
+reboot into Ubuntu and your root partition (/dev/sda1) now contains most of the drive and your swap partition is still at /dev/sda5 (albeit in a different location on the disk)
+this doesn't use LVM at all. Did you need it?
+
+
+
+==================Without UI==================
 + Add disk using vmware
 + Use gparted to create partition (e.g: sda3)
 Create a new primary partition:
