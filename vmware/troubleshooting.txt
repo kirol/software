@@ -1,3 +1,21 @@
+VMware tools fail to start
+This issue occurs because VMware Tools on a Linux guest operating systems depends on kernel library files. After a kernel upgrade or if you boot to a different kernel, VMware Tools fail to start if the configuration points to different library files.
+Resolution
+To resolve this issue, reconfigure VMware Tools after a kernel upgrade or after booting to a different kernel.
+
+To reconfigure VMware Tools:
+Log in to the Linux virtual machine as the root user.
+Run the command:
+
+/usr/bin/vmware-config-tools.pl
+
+Note: On ESXi 5.1 and later, selecting Yes at the prompt below will enable an automatic feature in VMware Tools that will search and install VMware kernel modules at the time of boot. This allows VMware Tools to install missing modules if there is a kernel upgrade or change:
+
+> VMware automatic kernel modules enables automatic building and
+> installation of VMware kernel modules at boot that are not already
+> present. This feature can be enabled/disabled by re-running vmware-config-tools.pl.
+> Would you like to enable VMware automatic kernel modules?
+
 ============VMware Tools installation fails when Easy Install is in progress ===========
 
 This error occurs when the virtual floppy with the autoinstall information required by Easy Install does not unmount properly.
