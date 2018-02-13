@@ -66,3 +66,11 @@ By default, Red Hat and CentOS 7 use the XFS file system you can grow the file s
 Run the following command to verify that the / filesystem has the new space available:
 
 # df -h /
+
+
+
+In Centos 7 default filesystem is xfs.
+
+xfs file system support only extend not reduce. So if you want to resize the filesystem use xfs_growfs rather than resize2fs.
+
+xfs_growfs /dev/root_vg/root 
